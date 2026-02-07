@@ -118,7 +118,16 @@ function setRandomPosition(element) {
 function showNextQuestion(questionNumber) {
     document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
     document.getElementById(`question${questionNumber}`).classList.remove('hidden');
+
+    // Reset floating elements
+    clearFloatingElements();
+
+    // 💌 Valentine screen emojis
+    if (questionNumber === 3) {
+        createFloatingFromList(config.floatingEmojis.valentine);
+    }
 }
+
 
 // Function to move the "No" button when clicked
 function moveButton(button) {
