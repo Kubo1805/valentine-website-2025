@@ -316,3 +316,32 @@ h2 {
     transform: scale(1.05);
     background: var(--secondary-color);
 } 
+
+.floating-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.floating-images img {
+  position: absolute;
+  width: 90px;
+  border-radius: 12px;
+  animation: floatAround 12s infinite ease-in-out;
+}
+
+.floating-images img:nth-child(1) { top: 10%; left: 15%; }
+.floating-images img:nth-child(2) { top: 20%; left: 70%; }
+.floating-images img:nth-child(3) { top: 60%; left: 10%; }
+.floating-images img:nth-child(4) { top: 70%; left: 60%; }
+.floating-images img:nth-child(5) { top: 40%; left: 30%; }
+.floating-images img:nth-child(6) { top: 30%; left: 80%; }
+
+@keyframes floatAround {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
