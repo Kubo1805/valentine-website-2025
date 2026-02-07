@@ -407,12 +407,16 @@ h2 {
   animation: floatUp 6s linear infinite;
 }
 
+/* Love Letter Styling — KEEP AT BOTTOM */
 #loveLetterText {
-    color: #ff4757 !important; /* force reddish color */
-    white-space: pre-wrap;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 20px;
+  color: #ff4757 !important;
+  white-space: pre-wrap;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
