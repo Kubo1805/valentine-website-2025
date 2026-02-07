@@ -170,21 +170,25 @@ loveMeter.addEventListener('input', () => {
         loveMeter.style.width = `calc(100% + ${extraWidth}px)`;
         loveMeter.style.transition = 'width 0.3s';
 
-        // 🪐 1000–4999 → planets
-        if (value >= 1000 && value < 5000) {
-            extraLove.classList.remove('super-love');
-            extraLove.textContent = config.loveMessages.high;
+       // 🪐 1000–4999 → ONLY planets
+if (value >= 1000 && value < 5000) {
+    extraLove.textContent = config.loveMessages.high;
 
-            createFloatingFromList(config.floatingEmojis.sliderPlanets);
-        }
+    clearFloatingElements();
+    createFloatingFromList(config.floatingEmojis.sliderPlanets, 20);
+}
 
-        // ⭐ 5000+ → planets + stars
-        else if (value >= 5000) {
-            extraLove.classList.add('super-love');
-            extraLove.textContent = config.loveMessages.extreme;
+// ⭐ 5000+ → ONLY stars (NO planets)
+else if (value >= 5000) {
+    extraLove.textContent = config.loveMessages.extreme;
 
-            createFloatingFromList(config.floatingEmojis.sliderStars);
-        }
+    clearFloatingElements();
+    createFloatingFromList(
+        config.floatingEmojis.sliderStars.filter(e => e === "⭐" || e === "✨"),
+        35
+    );
+}
+
 
         // 101–999 → no emojis
         else {
