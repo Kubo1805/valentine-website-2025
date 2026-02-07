@@ -407,4 +407,11 @@ h2 {
   animation: floatUp 6s linear infinite;
 }
 
+#loveLetterText {
+    white-space: pre-wrap;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ff4757; /* or whatever text color you want */
+}
+
 
