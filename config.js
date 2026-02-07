@@ -13,12 +13,16 @@ const CONFIG = {
 
     // Floating emojis that appear in the background
     // Find more emojis at: https://emojipedia.org
-    floatingEmojis: {
-        intro: ["💐", "💗", "💖"],
-        sliderPlanets: ["🪐", "🌍", "🌕"],
-        sliderStars: ["🪐", "🌍", "🌕", "⭐", "✨"],
-        valentine: ["💐", "💗", "💖", "💋"]
-    }
+ floatingEmojis: {
+    hearts: ["💐", "💗", "💖", "🌹", "💋"],
+    bears: ["🧸"],
+
+    sliderPlanets: ["🪐", "🌍", "🌕"],
+    sliderStars: ["🪐", "🌍", "🌕", "⭐", "✨"],
+
+    valentine: ["💐", "💗", "💖", "💋"]
+},
+
 
 
     // Questions and answers
