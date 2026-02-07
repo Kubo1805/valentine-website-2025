@@ -623,6 +623,49 @@ h2 {
     z-index: 2;
 }
 
+/* ==========================
+   IMAGE GRID — SAFE & CUTE 💕
+   ========================== */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 30px auto;
+    max-width: 900px;
+    justify-items: center;
+}
+
+.image-grid img {
+    width: 222px;
+    border-radius: 26px;
+    padding: 6px;
+
+    background:
+        radial-gradient(circle at top left, #ffd1dc, #ff6b81),
+        radial-gradient(circle at bottom right, #fff);
+
+    box-shadow:
+        0 0 0 4px rgba(255, 105, 180, 0.55),
+        0 14px 40px rgba(255, 105, 180, 0.35);
+
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-grid img {
+        width: 160px;
+    }
+}
 
 
 
