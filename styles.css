@@ -408,10 +408,10 @@ h2 {
 }
 
 #loveLetterText {
-    white-space: pre-wrap; /* preserves line breaks from your config */
+    color: #ff4757 !important; /* force reddish color */
+    white-space: pre-wrap;
     font-size: 16px;
     line-height: 1.5;
-    color: #ff4757; /* matches your Valentine color scheme */
     margin-top: 20px;
 }
 
