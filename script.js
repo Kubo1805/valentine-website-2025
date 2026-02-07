@@ -262,16 +262,21 @@ function clearFloatingElements() {
 }
 
 // Create floating emojis from a list
-function createFloatingFromList(emojiList, className = 'emoji') {
+function createFloatingFromList(emojiList, count = 15, className = 'emoji') {
     const container = document.querySelector('.floating-elements');
 
-    emojiList.forEach(emoji => {
+    for (let i = 0; i < count; i++) {
         const div = document.createElement('div');
+        const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
         div.className = className;
-        div.innerHTML = emoji;
-        setRandomPosition(div);
+        div.innerHTML = randomEmoji;
+
+        div.style.left = Math.random() * 100 + 'vw';
+        div.style.animationDelay = Math.random() * 2 + 's';
+        div.style.animationDuration = 4 + Math.random() * 4 + 's';
+
         container.appendChild(div);
-    });
+    }
 }
 
 
