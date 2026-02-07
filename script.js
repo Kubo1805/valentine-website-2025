@@ -143,22 +143,35 @@ function setInitialPosition() {
 loveMeter.addEventListener('input', () => {
     const value = parseInt(loveMeter.value);
     loveValue.textContent = value;
-    
+
+    // ALWAYS reset floating elements first
+    clearFloatingElements();
+
     if (value > 100) {
         extraLove.classList.remove('hidden');
         const overflowPercentage = (value - 100) / 9900;
         const extraWidth = overflowPercentage * window.innerWidth * 0.8;
         loveMeter.style.width = `calc(100% + ${extraWidth}px)`;
         loveMeter.style.transition = 'width 0.3s';
-        
-        // Show different messages based on the value
-        if (value >= 5000) {
-            extraLove.classList.add('super-love');
-            extraLove.textContent = config.loveMessages.extreme;
-        } else if (value > 1000) {
+
+        // 🪐 1000–4999 → planets
+        if (value >= 1000 && value < 5000) {
             extraLove.classList.remove('super-love');
             extraLove.textContent = config.loveMessages.high;
-        } else {
+
+            createFloatingFromList(config.floatingEmojis.sliderPlanets);
+        }
+
+        // ⭐ 5000+ → planets + stars
+        else if (value >= 5000) {
+            extraLove.classList.add('super-love');
+            extraLove.textContent = config.loveMessages.extreme;
+
+            createFloatingFromList(config.floatingEmojis.sliderStars);
+        }
+
+        // 101–999 → no emojis
+        else {
             extraLove.classList.remove('super-love');
             extraLove.textContent = config.loveMessages.normal;
         }
@@ -199,6 +212,25 @@ function createHeartExplosion() {
         setRandomPosition(heart);
     }
 }
+// Remove all existing floating elements
+function clearFloatingElements() {
+    const container = document.querySelector('.floating-elements');
+    container.innerHTML = '';
+}
+
+// Create floating emojis from a list
+function createFloatingFromList(emojiList, className = 'emoji') {
+    const container = document.querySelector('.floating-elements');
+
+    emojiList.forEach(emoji => {
+        const div = document.createElement('div');
+        div.className = className;
+        div.innerHTML = emoji;
+        setRandomPosition(div);
+        container.appendChild(div);
+    });
+}
+
 
 // Music Player Setup
 function setupMusicPlayer() {
