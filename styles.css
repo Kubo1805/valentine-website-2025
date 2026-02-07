@@ -459,7 +459,7 @@ h2 {
 /* ===== Bigger & Cuter Images for Q1 & Q3 ===== */
 
 .floating-images img {
-  width: 160px;              /* ⬅️ BIGGER */
+  width: 200px;              /* ⬅️ BIGGER */
   max-width: 40vw;
   border-radius: 20px;       /* softer corners */
   box-shadow: 0 15px 35px rgba(255, 105, 180, 0.35);
