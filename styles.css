@@ -471,6 +471,36 @@ h2 {
   transform: scale(1.08);
 }
 
+/* ===== Cute Romantic Borders for Photos ===== */
+
+.floating-images img {
+  width: 160px;
+  max-width: 40vw;
+  border-radius: 22px;
+
+  /* 💌 soft photo frame */
+  border: 4px solid rgba(255, 255, 255, 0.85);
+
+  /* 💗 romantic glow */
+  box-shadow:
+    0 10px 25px rgba(255, 105, 180, 0.35),
+    0 0 0 6px rgba(255, 192, 203, 0.35);
+
+  background: white;
+  padding: 4px;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ✨ gentle hover lift */
+.floating-images img:hover {
+  transform: scale(1.1) rotate(1deg);
+  box-shadow:
+    0 15px 35px rgba(255, 105, 180, 0.5),
+    0 0 0 8px rgba(255, 182, 193, 0.5);
+}
+
+
 
 
 
