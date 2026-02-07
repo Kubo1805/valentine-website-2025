@@ -408,14 +408,9 @@ h2 {
 }
 
 #loveLetterText {
-  color: #2f3542 !important; /* soft dark gray */
-  white-space: pre-wrap;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 20px;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  color: black !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
+
 
