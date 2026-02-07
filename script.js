@@ -109,10 +109,17 @@ function createFloatingElements() {
 
 // Set random position for floating elements
 function setRandomPosition(element) {
+    element.style.position = 'fixed';
     element.style.left = Math.random() * 100 + 'vw';
-    element.style.animationDelay = Math.random() * 5 + 's';
-    element.style.animationDuration = 10 + Math.random() * 20 + 's';
+    element.style.top = Math.random() * 100 + 'vh';
+
+    element.style.animationDelay = Math.random() * 2 + 's';
+    element.style.animationDuration = (10 + Math.random() * 15) + 's';
+    element.style.animationName = 'floatUp';
+    element.style.animationTimingFunction = 'linear';
+    element.style.animationIterationCount = 'infinite';
 }
+
 
 // Function to show next question
 function showNextQuestion(questionNumber) {
