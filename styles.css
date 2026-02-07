@@ -566,9 +566,10 @@ h2 {
 #question3 .floating-images img:nth-child(5) { top: 36%; left: 44%; }
 #question3 .floating-images img:nth-child(6) { top: 10%; left: 48%; }
 
-/* ======================================
-   PERFECT IMAGE RING — NO OVERLAP 💖
-   ====================================== */
+/* M
+/* ==============================
+   IMAGE RING — NO OVERLAP FIX 💖
+   ============================== */
 
 .image-ring {
     position: absolute;
@@ -580,11 +581,9 @@ h2 {
 .image-ring img {
     position: absolute;
     width: 222px;
-    height: auto;
     border-radius: 26px;
     padding: 6px;
 
-    /* Cute heart-glow border */
     background:
         radial-gradient(circle at top left, #ffd1dc, #ff6b81),
         radial-gradient(circle at bottom right, #fff);
@@ -596,47 +595,24 @@ h2 {
     animation: softFloat 6s ease-in-out infinite;
 }
 
-/* HEART-SHAPED LAYOUT (6 IMAGES) */
-.image-ring img:nth-child(1) {
-    top: 6%;
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* LEFT SIDE */
+.image-ring img:nth-child(1) { top: 10%; left: 6%; }
+.image-ring img:nth-child(2) { top: 40%; left: 6%; }
+.image-ring img:nth-child(3) { bottom: 8%; left: 6%; }
 
-.image-ring img:nth-child(2) {
-    top: 25%;
-    right: 6%;
-}
+/* RIGHT SIDE */
+.image-ring img:nth-child(4) { top: 10%; right: 6%; }
+.image-ring img:nth-child(5) { top: 40%; right: 6%; }
+.image-ring img:nth-child(6) { bottom: 8%; right: 6%; }
 
-.image-ring img:nth-child(3) {
-    top: 55%;
-    right: 6%;
-}
-
-.image-ring img:nth-child(4) {
-    bottom: 6%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.image-ring img:nth-child(5) {
-    top: 55%;
-    left: 6%;
-}
-
-.image-ring img:nth-child(6) {
-    top: 25%;
-    left: 6%;
-}
-
-/* Soft float = cute, not chaotic */
 @keyframes softFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
 
-/* Make sure the question card is ALWAYS on top */
-.question-section {
+/* Card ALWAYS on top */
+.question-section h2,
+.question-section button {
     position: relative;
     z-index: 5;
 }
@@ -644,8 +620,14 @@ h2 {
 /* Mobile safety */
 @media (max-width: 768px) {
     .image-ring img {
-        width: 150px;
+        width: 140px;
     }
+}
+
+.question-section {
+    position: relative;
+    min-height: 520px; /* THIS is the key */
+    z-index: 2;
 }
 
 
