@@ -196,19 +196,45 @@ window.addEventListener('DOMContentLoaded', setInitialPosition);
 window.addEventListener('load', setInitialPosition);
 
 // Celebration function
+// Celebration / Love Letter function with fade-in & magical hearts
 function celebrate() {
+    // Hide all question sections
     document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
+
+    // Show celebration section
     const celebration = document.getElementById('celebration');
     celebration.classList.remove('hidden');
-    
-    // Set celebration messages
-    document.getElementById('celebrationTitle').textContent = config.celebration.title;
-    document.getElementById('celebrationMessage').textContent = config.celebration.message;
-    document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
-    
-    // Create heart explosion effect
-    createHeartExplosion();
+
+    // Set love letter content (editable via config or fallback to HTML)
+    const letter = document.getElementById('loveLetterText');
+    letter.textContent = config.loveLetter || letter.textContent;
+
+    // Fade in the letter
+    letter.style.opacity = 0;
+    letter.style.transform = 'translateY(20px)';
+    setTimeout(() => {
+        letter.style.transition = 'opacity 1.5s ease, transform 1.5s ease';
+        letter.style.opacity = 1;
+        letter.style.transform = 'translateY(0)';
+    }, 100);
+
+    // Clear any existing floating elements
+    clearFloatingElements();
+
+    // Gradually add floating hearts for magical effect
+    const heartList = config.floatingEmojis.hearts;
+    let delay = 0;
+    heartList.forEach((heart, index) => {
+        setTimeout(() => {
+            createFloatingFromList([heart], 'heart');
+        }, delay);
+        delay += 300; // each heart appears every 300ms
+    });
+
+    // Optional: small heart explosion at the start
+    createHeartExplosion(15); // create 15 hearts immediately
 }
+
 
 // Create heart explosion animation
 function createHeartExplosion() {
