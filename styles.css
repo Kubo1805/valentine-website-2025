@@ -423,7 +423,10 @@ h2 {
     font-size: 1.15rem;
     line-height: 2;
     letter-spacing: 0.3px;
-    color: #2f3542;
+
+    /* 🌸 Soft romantic plum text (easy on the eyes) */
+    color: #4b2c3d;
+
     box-shadow: 0 20px 40px rgba(255, 105, 180, 0.25);
     outline: 2px solid rgba(255, 255, 255, 0.6);
     outline-offset: -10px;
@@ -439,9 +442,11 @@ h2 {
     margin-bottom: 1.4em;
 }
 
+/* 💖 Special opening line: "My Gracie," */
 .love-letter p:first-of-type {
     font-size: 1.3rem;
     font-weight: 600;
+    color: #d6336c; /* warm rose highlight */
 }
 
 /* So floating emojis stay cute, not distracting */
@@ -450,6 +455,7 @@ h2 {
 .bear {
     opacity: 0.35;
 }
+
 
 
 
