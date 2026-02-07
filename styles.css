@@ -408,9 +408,10 @@ h2 {
 }
 
 #loveLetterText {
-  color: black !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  position: relative !important;
+  z-index: 10000 !important;
+  color: #2f3542 !important;
 }
+
 
 
