@@ -497,6 +497,75 @@ h2 {
   pointer-events: none;
 }
 
+/* ================================
+   FLOATING IMAGES — FINAL VERSION
+   ================================ */
+
+/* Container fix so images never get clipped */
+.floating-images {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: visible; /* IMPORTANT: stops images from disappearing */
+    z-index: 0;
+}
+
+/* Image base style */
+.floating-images img {
+    width: 222px;
+    height: auto;
+    border-radius: 22px;
+    object-fit: cover;
+
+    /* Cute heart-ish border */
+    border: 5px solid transparent;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(
+            135deg,
+            #ff6b81,
+            #ff9ff3,
+            #feca57,
+            #ff6b81
+        ) border-box;
+
+    /* Glow + softness */
+    box-shadow:
+        0 12px 25px rgba(255, 105, 180, 0.35),
+        0 0 18px rgba(255, 182, 193, 0.45);
+
+    position: absolute;
+    animation: floaty 7s ease-in-out infinite;
+    opacity: 0.95;
+}
+
+/* Float animation */
+@keyframes floaty {
+    0%   { transform: translateY(0) rotate(-1deg); }
+    50%  { transform: translateY(-18px) rotate(1deg); }
+    100% { transform: translateY(0) rotate(-1deg); }
+}
+
+/* ================================
+   QUESTION 1 — YOUR PICS
+   ================================ */
+#question1 .floating-images img:nth-child(1) { top: 8%;  left: 6%; }
+#question1 .floating-images img:nth-child(2) { top: 22%; left: 70%; }
+#question1 .floating-images img:nth-child(3) { top: 55%; left: 8%; }
+#question1 .floating-images img:nth-child(4) { top: 65%; left: 72%; }
+#question1 .floating-images img:nth-child(5) { top: 38%; left: 42%; }
+#question1 .floating-images img:nth-child(6) { top: 12%; left: 45%; }
+
+/* ================================
+   QUESTION 3 — HER PICS
+   ================================ */
+#question3 .floating-images img:nth-child(1) { top: 6%;  left: 10%; }
+#question3 .floating-images img:nth-child(2) { top: 20%; left: 68%; }
+#question3 .floating-images img:nth-child(3) { top: 50%; left: 12%; }
+#question3 .floating-images img:nth-child(4) { top: 60%; left: 70%; }
+#question3 .floating-images img:nth-child(5) { top: 36%; left: 44%; }
+#question3 .floating-images img:nth-child(6) { top: 10%; left: 48%; }
+
 
 
 
