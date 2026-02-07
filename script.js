@@ -221,7 +221,8 @@ function celebrate() {
 
     // Set love letter content (editable via config or fallback to HTML)
     const letter = document.getElementById('loveLetterText');
-    letter.textContent = config.loveLetter || letter.textContent;
+    letter.textContent = config.celebration.loveLetter || letter.textContent;
+
 
     // Fade in the letter
     letter.style.opacity = 0;
