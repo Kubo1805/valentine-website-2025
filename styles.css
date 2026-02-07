@@ -407,11 +407,23 @@ h2 {
   animation: floatUp 6s linear infinite;
 }
 
-#loveLetterText {
-  position: relative !important;
-  z-index: 10000 !important;
-  color: #2f3542 !important;
+.love-letter {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 50px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 214, 221, 0.95),
+        rgba(255, 192, 203, 0.85)
+    );
+    border-radius: 28px;
+    text-align: left;
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #2f3542;
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.25);
 }
+
 
 
 
