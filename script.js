@@ -237,8 +237,8 @@ function celebrate() {
 
 
 // Create heart explosion animation
-function createHeartExplosion() {
-    for (let i = 0; i < 50; i++) {
+function createHeartExplosion(count = 50) {
+    for (let i = 0; i < count; i++) {
         const heart = document.createElement('div');
         const randomHeart = config.floatingEmojis.hearts[Math.floor(Math.random() * config.floatingEmojis.hearts.length)];
         heart.innerHTML = randomHeart;
@@ -247,6 +247,7 @@ function createHeartExplosion() {
         setRandomPosition(heart);
     }
 }
+
 // Remove all existing floating elements
 function clearFloatingElements() {
     const container = document.querySelector('.floating-elements');
