@@ -110,15 +110,20 @@ function createFloatingElements() {
 // Set random position for floating elements
 function setRandomPosition(element) {
     element.style.position = 'fixed';
+    // Random horizontal anywhere on screen
     element.style.left = Math.random() * 100 + 'vw';
+    // Random vertical anywhere on screen
     element.style.top = Math.random() * 100 + 'vh';
 
+    // Random animation delay and faster duration
     element.style.animationDelay = Math.random() * 2 + 's';
-    element.style.animationDuration = (10 + Math.random() * 15) + 's';
+    element.style.animationDuration = (5 + Math.random() * 10) + 's'; // faster
     element.style.animationName = 'floatUp';
     element.style.animationTimingFunction = 'linear';
     element.style.animationIterationCount = 'infinite';
 }
+
+
 
 
 // Function to show next question
@@ -170,24 +175,22 @@ loveMeter.addEventListener('input', () => {
         loveMeter.style.width = `calc(100% + ${extraWidth}px)`;
         loveMeter.style.transition = 'width 0.3s';
 
-       // 🪐 1000–4999 → ONLY planets
+// 🪐 1000–4999 → ONLY planets
 if (value >= 1000 && value < 5000) {
     extraLove.textContent = config.loveMessages.high;
 
     clearFloatingElements();
-    createFloatingFromList(config.floatingEmojis.sliderPlanets, 20);
+    createFloatingFromList(config.floatingEmojis.sliderPlanets, 'emoji', 20); // 20 copies per planet
 }
 
-// ⭐ 5000+ → ONLY stars (NO planets)
+// ⭐ 5000+ → ONLY stars
 else if (value >= 5000) {
     extraLove.textContent = config.loveMessages.extreme;
 
     clearFloatingElements();
-    createFloatingFromList(
-        config.floatingEmojis.sliderStars.filter(e => e === "⭐" || e === "✨"),
-        35
-    );
+    createFloatingFromList(config.floatingEmojis.sliderStars.filter(e => e === "⭐" || e === "✨"), 'emoji', 35); // 35 copies per star
 }
+
 
 
         // 101–999 → no emojis
@@ -265,23 +268,21 @@ function clearFloatingElements() {
     container.innerHTML = '';
 }
 
-// Create floating emojis from a list
-function createFloatingFromList(emojiList, count = 15, className = 'emoji') {
+// Create floating emojis from a list (updated)
+function createFloatingFromList(emojiList, className = 'emoji', countPerEmoji = 5) {
     const container = document.querySelector('.floating-elements');
 
-    for (let i = 0; i < count; i++) {
-        const div = document.createElement('div');
-        const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
-        div.className = className;
-        div.innerHTML = randomEmoji;
-
-        div.style.left = Math.random() * 100 + 'vw';
-        div.style.animationDelay = Math.random() * 2 + 's';
-        div.style.animationDuration = 4 + Math.random() * 4 + 's';
-
-        container.appendChild(div);
-    }
+    emojiList.forEach(emoji => {
+        for (let i = 0; i < countPerEmoji; i++) { // create multiple of the same emoji
+            const div = document.createElement('div');
+            div.className = className;
+            div.innerHTML = emoji;
+            setRandomPosition(div);
+            container.appendChild(div);
+        }
+    });
 }
+
 
 
 // Music Player Setup
