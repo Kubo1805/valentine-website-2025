@@ -392,3 +392,27 @@ h2 {
     opacity: 1;
   }
 }
+/* Floating emoji animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* Floating emoji base styles */
+.emoji,
+.heart,
+.bear {
+  position: fixed;
+  font-size: 26px;
+  pointer-events: none;
+}
+
