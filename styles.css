@@ -588,15 +588,39 @@ h2 {
     animation: softFloat 6s ease-in-out infinite;
 }
 
-/* LEFT SIDE */
-.image-ring img:nth-child(1) { top: 10%; left: 6%; }
-.image-ring img:nth-child(2) { top: 40%; left: 6%; }
-.image-ring img:nth-child(3) { bottom: 8%; left: 6%; }
+/* -------- TOP -------- */
+.image-ring img:nth-child(1) {
+  top: 5%;
+  left: 12%;
+}
 
-/* RIGHT SIDE */
-.image-ring img:nth-child(4) { top: 10%; right: 6%; }
-.image-ring img:nth-child(5) { top: 40%; right: 6%; }
-.image-ring img:nth-child(6) { bottom: 8%; right: 6%; }
+.image-ring img:nth-child(2) {
+  top: 5%;
+  right: 12%;
+}
+
+/* -------- SIDES -------- */
+.image-ring img:nth-child(3) {
+  top: 40%;
+  left: 3%;
+}
+
+.image-ring img:nth-child(4) {
+  top: 40%;
+  right: 3%;
+}
+
+/* -------- BOTTOM -------- */
+.image-ring img:nth-child(5) {
+  bottom: 5%;
+  left: 14%;
+}
+
+.image-ring img:nth-child(6) {
+  bottom: 5%;
+  right: 14%;
+}
+
 
 @keyframes softFloat {
     0%, 100% { transform: translateY(0); }
