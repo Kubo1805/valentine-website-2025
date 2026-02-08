@@ -452,7 +452,7 @@ h2 {
 /* ===== Heart-Shaped Cute Borders for Photos ===== */
 
 .floating-images img {
-  width: 222px;              /* 💖 your requested size */
+  width: 200px;              /* 💖 your requested size */
   max-width: 45vw;
   border-radius: 28px;
   padding: 6px;
@@ -505,7 +505,7 @@ h2 {
 
 /* Image base style */
 .floating-images img {
-    width: 222px;
+    width: 200px;
     height: auto;
     border-radius: 22px;
     object-fit: cover;
@@ -573,7 +573,7 @@ h2 {
 
 .image-ring img {
     position: absolute;
-    width: 222px;
+    width: 200px;
     border-radius: 26px;
     padding: 6px;
 
