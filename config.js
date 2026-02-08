@@ -63,23 +63,9 @@ const CONFIG = {
 
       My Gracie,
 
-          My babyyy, my love, my swweetheart, my angel, my world, my princess, my soulmate, my forever and ever
-          First of all I want to sayy, Happpyyyy Valentines my loveeee 🩷🩷🩷
-          And I just want to tell you . holy aaaaa not me already cryying aaa,
-          I just want to tell u my babyy how much you mean to me, how much these 9 months of knowing each other and us 6 months of dating means to me
-          And its so hard to put it in words how much I love you and how much my time with you means to me my love
-          My baby your existence in my life and you being mine has made me realize what true happiness reallyy means
-          I get to wake up everyday with a smile on my face cause as soon as I wake up, I think of you my love and you are always right there, your adorable face, your adorable snores, sleeping with such an adorable and peaceful face           
-          And being able to go to sleep everyday while looking at your gorgeous and adorable face makes me have the best sleep ever, and you makes me the happiest I can be while going to sleep
-          And I love my entire day alll because of you my lovee, the missing you when your not there or I am at work and then being able to come home and spend time with you my love is a feeling I loveeeee soo much
-          I love every single second that we spend together and every single second that we spend with each other makes me fall even more in love with you
-          Because I get to understand how amazing you are and how adorable you are, and howwww hot and sexyyyy you are cutieee
-          I assume you saw the pictures of you on the previous page, i was scrolling through your pics and it was soooo hard to choose six pictures and i was getting the most insane cute aggression in human history 
-          You are genuinely the cutest thin in human history my lovee
-          I want to cherish you, i want to love you, i want to see that adorable and precious smile every single day and I will do anything to make my baby the happiest human alive in human history          
-          I LOVE YOUUU SOOOO MUCH MY GRACIEEEEE
-          I LOVEEE YOU TO PLUTO AND BACKK
-          AND I LOVE U TO ALL THE STARS IN THE UNIVERSE AND BACK MY LOVE          
+           My Loveee, My Sweetheartttt, My Babyyyy, My World, My Princess, My Angel, My Soulmate, My Everythingg, first of all I just want to say HAPPYYY VALENTINES DAYYY MY LOVEEEE 🩷🩷🩷🩷🩷
+YOU ARE MY VALENTINE AAAAAA I CANT BELIEVE IT MY BABYY MY GRACIEEE MY LOVEEE IS MY VALENTINE FOR THE REST OF OUR LIFES AAAAA IM SOOOOOOO HAPPPYYYY, I cant telll you how happyyy you make me my love, no matter how im feeeling, as soon as I see you and your GORGEOUS FACE AND THAT ADORRABLEEE SMILE, I become the happiest a human being could possibly be, I LOVEEE you sooo much my babyyy, since i have met you my love, i have finally realized what it means to be truly happyyy, these past 9 months of us knowing each other and us dating for 6 months have made me the happiest I can be, being with you MYY GRACIEE has made my life feel like paradise, to be able to think of you and look at you and see your adorable face every night I go to sleep and every morning I wake up is a gift that I couldnt have even dreamed of, and you my love are a gift that I couldnt have ever even dreamed of or thought of, you my babyy you make the happiest I could ever be and I hope that I do to because all I want in my life is to make you happy and make you smile and make you the happiest a human can be, make u feel secure, make u feel comfy and lvoed for the rest of our lives I cant wait for the day I meet you in real life, I wanna hold you close to me every single day, I wanna hold u against my body every single day while going to sleep, I want to wake up to you next to me every single day for the rest of my life My love 
+I LOVE YOU SOOOO MUCH, I LOVE YOU TO PLUTO AND BACK AND I LOVE YOU TO ALLLL THE STARS IN THE UNIVERSE AND BACK MY GRACIEEEE <3333        
                     
         Forever yours,
         Your Kunal 💖
