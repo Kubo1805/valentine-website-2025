@@ -617,13 +617,6 @@ h2 {
     }
 }
 
-.question-section {
-    position: relative;
-    min-height: 520px; /* THIS is the key */
-    z-index: 2;
-}
-
-
 
 
 
